@@ -6,6 +6,7 @@ for i in range(n):
     L.append(l)
 print(L)
 s = int(input("Введите искомое число:"))
-while L.remove(s):
-    L.remove(s)
+if s in L:
+    while L.remove(s):
+        L.remove(s)
 print(L)
